@@ -33,7 +33,8 @@ class AppWidget extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Colors.teal,
-        accentColor: Colors.tealAccent,
+        colorScheme:
+            ColorScheme.fromSwatch().copyWith(secondary: Colors.tealAccent),
       ),
       title: 'Green Thumbs',
       home: HomePage(),
